@@ -1,4 +1,4 @@
-// C program to find the size of file 
+// C program to permanently delete files
 #include <stdio.h> 
   
 long int findSize(char file_name[]) 
