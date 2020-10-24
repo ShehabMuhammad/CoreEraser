@@ -49,14 +49,14 @@ fclose(hakuna);
 
 void EraseFile( char *path, long int size){
 
-FILE *fuck = fopen(path, "a+") ;
+FILE *file = fopen(path, "a+") ;
 int i=size/2;
 while(i>0){
-fputs( "00", fuck );
+fputs( "00", file );
 i--;
 }
 
 
-fclose(fuck);
+fclose(file);
 remove(path); printf(" --- File Has Been Erased Successfully ---");
 }
